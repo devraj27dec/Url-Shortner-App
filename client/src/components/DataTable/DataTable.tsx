@@ -5,8 +5,8 @@ import { serverUrl } from '../../helpers/Constants';
 import axios from 'axios';
 
 export interface IDataTableProps {
-    data: UrlData[];
-    updateReloadState: () => void
+  data: UrlData[];
+  updateReloadState: () => void
 }
 
 const DataTable : React.FunctionComponent<IDataTableProps> = (props) => {

@@ -5,10 +5,9 @@ import axios from 'axios';
 import { serverUrl } from '../../helpers/Constants';
 import DataTable from '../DataTable/DataTable';
 
-export interface IContainerProps {
-}
 
-const Container: React.FunctionComponent<IContainerProps>= () => {
+
+const Container = () => {
   const [data , setData ] = React.useState<UrlData[]>([]);
   const [reload , setReload ] = React.useState<boolean>(false);
 
@@ -27,6 +26,7 @@ const Container: React.FunctionComponent<IContainerProps>= () => {
 
   React.useEffect(() => {
     fetchTableData();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[reload])  
   return (
     <>

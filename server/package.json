@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "nodemon dist/server.js",
     "watch": "tsc -w",
-    "start": " npx tsc && node dist/server.js"
+    "start": " npx tsc && node dist/server.js",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",

@@ -6,7 +6,6 @@ import { serverUrl } from '../../helpers/Constants';
 import DataTable from '../DataTable/DataTable';
 
 
-
 const Container = () => {
   const [data , setData ] = React.useState<UrlData[]>([]);
   const [reload , setReload ] = React.useState<boolean>(false);

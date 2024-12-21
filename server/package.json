@@ -4,6 +4,7 @@
   "description": "This project contains url shortner apis",
   "main": "server.js",
   "scripts": {
+    "dev": "node dist/server.js",
     "watch": "tsc -w",
     "start": "npm run build && node dist/server.js",
     "build": "tsc"

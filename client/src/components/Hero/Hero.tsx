@@ -6,7 +6,7 @@ import { serverUrl } from '../../helpers/Constants';
 import DataTable from '../DataTable/DataTable';
 
 
-const Container = () => {
+const Hero = () => {
   const [data , setData ] = React.useState<UrlData[]>([]);
   const [reload , setReload ] = React.useState<boolean>(false);
 
@@ -35,4 +35,4 @@ const Container = () => {
   );
 }
 
-export default Container;
+export default Hero

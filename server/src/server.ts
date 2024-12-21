@@ -1,7 +1,7 @@
-import express from "express";
+import * as dotenv from "dotenv";
+dotenv.config()
+import express , {Request , Response} from "express";
 import cors from "cors";
-import dotenv from "dotenv";
-dotenv.config();
 const port = process.env.PORT || 5001;
 import connectDB from "./config/Conn";
 import ShortUrlRouter from "./routes/ShortUrl.routes";
@@ -17,7 +17,7 @@ app.use(
   })
 );
 
-app.get("/", (req, res) => {
+app.get("/", (req: Request, res : Response) => {
   res.send("Hello World!");
 });
 

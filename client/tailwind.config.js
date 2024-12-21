@@ -6,11 +6,10 @@ export default {
   ],
   theme: {
     extend: {
-      backgroundImage: {
+      backgroundImage:{
         banner: "url('/bg.jpg')"
       }
     },
   },
   plugins: [],
 }
-

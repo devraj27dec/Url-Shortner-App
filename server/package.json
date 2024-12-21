@@ -4,9 +4,8 @@
   "description": "This project contains url shortner apis",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon dist/server.js",
     "watch": "tsc -w",
-    "start": " npx tsc && node dist/server.js",
+    "start": "npm run build && node dist/server.js",
     "build": "tsc"
   },
   "keywords": [],
